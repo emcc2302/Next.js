@@ -1,12 +1,21 @@
 import styles from "./DepartmentCard.module.css";
-export default function DepartmentCard(props) {
+import Link from "next/link";
+export default function DepartmentCard({
+
+  name,
+  students,
+  slug,
+})
+{
   return (
     <div className={styles.card}>
-      <h2>{props.name}</h2>
+      <h2>{name}</h2>
 
-      <p>{props.students} Students</p>
-
-      <button className={styles.button}>View Details</button>
+      <p>{students} Students</p>
+    
+      <Link href={`/departments/${slug}`} className={styles.button}>
+        View Details
+      </Link>
     </div>
   );
 }

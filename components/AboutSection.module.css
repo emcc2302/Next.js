@@ -1,0 +1,43 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 120px auto;
+
+    gap: 50px;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+
+    border: none;
+    background: royalblue;
+    color: white;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background: navy;
+}
